@@ -1,0 +1,124 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+    
+
+/*aside*/
+aside{
+    float: left;
+    width: 25%;
+    height: 600vh;
+    text-align: center;
+    background: #0C5C6B ;
+    box-shadow: 5px 0 100px 5px #032026;
+}
+
+/*seccion 1 hace todo baje con la pagina*/
+.section1-aside{
+    top: 0;
+    position: sticky;
+}
+/*imagen de perfil*/
+.img-andres {
+    width: 50%;
+    margin-top: 15%;
+    border-radius: 10px;
+    
+}
+/*lista de links*/
+.lista-items{
+    margin-top: 50px;
+}
+
+ /*li de la lista */
+.items{
+    display: block; 
+    font-size: 18px;
+    margin-left: -25px ;
+    font-family: 'VT323', monospace;
+    line-height: 2;
+   
+   
+}
+
+.items a{
+    transition: 1s all;
+}
+/*efecto cuando el mause se pocisiona encima*/
+.items a:hover{ 
+    color: #ffffff;
+
+}
+
+
+
+/*links*/
+.items a{
+    text-decoration: none;
+    color: #89BFCA;
+    
+   
+}
+
+/****************************** Respondive ************************************/
+
+@media(max-width:1200px){
+    .img-andres {
+        width: 50%;
+        margin-top: 40%;
+        border-radius: 10px;
+       
+    }
+}
+
+  /* Tabletas y pantallas medianas */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+    /*aside*/
+aside{
+   
+    width: 25%;
+    height: 839.9vh;
+    
+    
+}
+
+
+/*imagen de perfil*/
+.img-andres {
+    width: 70%;
+    margin-top: 30%;
+    border-radius: 10px;
+    
+}
+
+
+ /*li de la lista */
+.items{
+    font-size: 28px;
+}
+
+
+  }
+
+
+  
+  /* Tablets y dispositivos pequeños */
+  @media (min-width: 500px) and (max-width: 767px) {
+
+
+/*aside*/
+aside{
+   display: none;
+   
+}
+
+  }
+  
+  /* Teléfonos móviles */
+@media (max-width: 499px) {
+    aside{
+        display: none;
+    }
+   
+  }
