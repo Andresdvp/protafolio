@@ -11,18 +11,432 @@
 </head>
 
 <body>
-    <div class="container">
-        <div include-html="./portal/header.html"></div>
-        <div include-html="./portal/aside.html"></div>
-        <div include-html="./portal/content.html"></div>
-       
-        
-    </div>
+    <header>
 
-    <!--Archivo js para organizar bien el html -->
-    <script src="./js/include-html.js "></script>
-    
-  
+        <div class="menu">
+
+            <nav>
+                <input type="checkbox" id="side-menu" class="side-menu">
+                <label for="side-menu" class="hamb"><span class="hamb-line"></span></label>
+                <ul class="nav-items">
+
+
+
+                    <li id="andre"><a href="#andres">
+
+                            Andres V.
+
+                        </a> </li>
+                    <li id="sobre"><a href="#sobre-mi">
+
+                            Sobre mi
+
+                        </a></li>
+                    <li id="proyecto"><a href="#proyectos">
+
+                            Proyectos
+
+                        </a></li>
+                    <li id="edu"><a href="#educacion">
+
+                            Educacion
+
+                        </a></li>
+                    <li id="skill"><a href="#skills">
+
+                            Skills
+
+                        </a></li>
+                    <li id="contact"><a href="#contacto">
+
+                            Contacto
+
+                        </a></li>
+                    <li id="slide"></li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+
+    </header>
+
+    <aside>
+        <section class="section1-aside">
+
+            <img class="img-andres" src="img/andres.jpeg" alt="Andres valencia">
+            <ul class="lista-items">
+                <li class="items"><a href="#andres">Andres V.</a> </li>
+                <li class="items"><a href="#sobre-mi">Sobre mi</a></li>
+                <li class="items"><a href="#proyectos">Proyectos</a></li>
+                <li class="items"><a href="#educacion">Educacion</a></li>
+                <li class="items"><a href="#skills">Skills</a></li>
+                <li class="items"><a href="#contacto">Contacto</a></li>
+            </ul>
+
+        </section>
+
+    </aside>
+
+    <main>
+        <!--Seccion de Andres Valencia-->
+        <section class="section">
+
+            <div class="titulo" id="andres">
+                <h1><i> ANDRÉS D. </i>VALENCIA P.</h1>
+            </div>
+
+            <div class="gif">
+                <img src="img/wired-outline-950-attract-customers.gif" alt="gif-atrae-gente" width="300px"
+                    height=" 300px">
+            </div>
+
+            <article class="informacion">
+                <H4>Bienvenidos a mi portafolio como desarrollador full stack</H4>
+
+                <P>Si deseas pornerte en contacto conmigo escribe a una de mis redes </P>
+
+                <div class="contacto">
+                    <a href="https://www.facebook.com/andres.valencia.7792/" class="icon facebook" target="_blank">
+                        <span class="tooltip">Facebook</span>
+                        <span>
+                            <i class="fa-brands fa-facebook"></i>
+                        </span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/andr%C3%A9s-valencia-portocarrero/" class="icon linkedin"
+                        target="_blank">
+                        <span class="tooltip">Linkedin</span>
+                        <span>
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                    </a>
+                    <a href="https://github.com/Andresdvp" class="icon github" target="_blank">
+                        <span class="tooltip">Github</span>
+                        <span>
+                            <i class="fa-brands fa-github-alt"></i>
+                        </span>
+                    </a>
+
+                </div>
+
+
+            </article>
+        </section>
+        <!--Seccion  sobre mi-->
+        <section class="section">
+
+            <div class="titulo" id="sobre-mi">
+
+                <div class="sub-titulo">
+                    <h2>Sobre mi</h2>
+                </div>
+
+                <div class="informacion">
+
+                    <p style="text-align: justify;">Soy una persona altamente motivada y comprometida con mi desarrollo
+                        personal
+                        y profesional. Mi pasión por
+                        perfeccionar mis habilidades y alcanzar nuevas metas me impulsa constantemente a crecer y
+                        superarme.
+                        Confío
+                        plenamente en mi capacidad para generar ideas innovadoras y originales que capturarán la
+                        atención de
+                        quienes
+                        las descubran. Cada día me esfuerzo por ser una persona creativa y proactiva, dispuesta a asumir
+                        desafíos y
+                        buscar soluciones efectivas. Mi determinación y confianza en mí mismo/a son las bases sólidas
+                        sobre
+                        las
+                        cuales construyo mi camino hacia el éxito y el logro de mis objetivos.</p>
+                </div>
+
+                <div class="busco">
+                    <h3>
+                        Actualmente Estudio y buco estender mi experiencia laboral en el mundo del desarrollo web
+                    </h3>
+                </div>
+
+                <div class="informacion">
+                    <div class="links-doc">
+                        <p>Mira mis skill y experiencias en <a href="">Linkedin</a> o descarga mi Curriculum</p>
+
+                        <div class="curriculum">
+                            <button class="btn">
+
+                                <a href="../CV/curriculum-dev.pdf" download="Curriculum de Andres Valencia">Descargar
+                                    CV</a>
+                            </button>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!--Seccion de proyectos-->
+        <section class="section">
+
+            <div class="container" id="proyectos">
+
+                <div class="sub-titulo">
+                    <h2>Proyectos</h2>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="content">
+                        <img src="img/img-encriptador.png" alt="img-encriptador">
+                        <h4>Encriptador</h4>
+
+
+                        <p>
+                            Un ecriptador de texto perfecto para enviar mensajes cifrados con tus amigos
+                        </p>
+                    </div>
+                    <div class="footer-card">
+                        <button><a href="https://andresdvp.github.io/Encriptador-de-texto/"
+                                target="_blank">VER</a></button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <img src="img/login-basico.png" alt="img-de-login">
+                        <h4>Login basico</h4>
+
+
+                        <p>
+                            Un login basico echo con HTML, CSS y BOOTSTRAP
+                        </p>
+                    </div>
+                    <div class="footer-card">
+                        <button><a href="https://andresdvp.github.io/login-basico/" target="_blank">VER</a></button>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+        <!--Seccion de educacion-->
+        <section class="section">
+
+            <div class="container" id="educacion">
+
+                <div class="sub-titulo">
+                    <h2>Educacion</h2>
+                </div>
+
+                <div class="informacion">
+                    <p>Has click en la imagen para ver el certificado </p>
+                </div>
+
+                <div class="img-documentos">
+                    <a href="https://drive.google.com/file/d/1NV0hjqLqTVTiawoWmFj8WHiGgIRjqQhf/view?usp=drive_link"
+                        target="_blank"><img src="img/pythom.png" alt="" class="documento"></a>
+                    <a href="https://drive.google.com/file/d/1SnS6hj9YWWn6TaPZlUTRkQJozt4VaToL/view?usp=drive_link"
+                        target="_blank"><img src="img/desarroyo-softtware.png" alt="" class="documento"></a>
+                    <a href="https://drive.google.com/file/d/1BKxYYGcO_2xBduYUNd5sU2n3biHLYKWU/view?usp=drive_link"
+                        target="_blank"><img src="img/programacion-web.png" alt="" class="documento"></a>
+                    <a href="https://drive.google.com/file/d/1pTy1indWNKrmiOyFNm_GBk5cWYyF7tUA/view?usp=drive_link"
+                        target="_blank"><img src="img/java.png" alt="" class="documento"></a>
+                    <a href="https://app.aluracursos.com/degree/certificate/1db496e2-a9bd-4243-b93c-aa6262da4e61"
+                        target="_blank"><img src="img/alura-B_agilyti.png" alt="" class="documento"></a>
+                    <a href="https://app.aluracursos.com/degree/certificate/2279f2b1-beb6-41f5-ac02-0ff22b204e2f"
+                        target="_blank"><img src="img/alura-D_personal.png" alt="" class="documento"></a>
+                    <a href="https://app.aluracursos.com/degree/certificate/a465a7c8-1b6e-426e-b88d-dcf2e3bde567"
+                        target="_blank"><img src="img/alura-P_programacion.png" alt="" class="documento"></a>
+                    <a href="https://app.aluracursos.com/certificate/5ce6b305-ad9f-4329-9b29-bd4d83c2201e"
+                        target="_blank"><img src="img/alura-git_github.png" alt="" class="documento"></a>
+
+
+                </div>
+
+            </div>
+        </section>
+        <!--Seccion de las skill-->
+        <section class="section">
+            <div class="container" id="skills">
+                <div class="sub-titulo">
+
+                    <h2>Skills</h2>
+                </div>
+
+                <div>
+
+                    <h4 class="lenguajes">Lenguajes de Programacion</h4>
+
+                </div>
+
+                <div class="staks">
+
+                    <div class="stak">
+                        <spam class="skill">
+                            <spam class="icon2 js">
+                                <img src="img/icon_js.png" alt="JavaScrip">
+                            </spam>
+                            <spam class="nombre_lenguaje">JavaScrip</spam>
+
+                        </spam>
+
+                        <spam class="skill">
+                            <spam class="icon2">
+                                <img src="img/icon_java.png" alt="Java">
+                            </spam>
+                            <spam class="nombre_lenguaje">Java</spam>
+                        </spam>
+
+                        <spam class="skill">
+                            <spam class="icon2">
+                                <img src="img/icon_python.png" alt="Python">
+                            </spam>
+                            <spam class="nombre_lenguaje">Python</spam>
+                        </spam>
+
+                        <spam class="skill">
+                            <spam class="icon2">
+                                <img src="img/icon_html.png" alt="Html">
+                            </spam>
+                            <spa class="nombre_lenguaje" m>Html
+                        </spam>
+                        </spam>
+                        <spam class="skill">
+                            <spam class="icon2">
+                                <img src="img/icon_css.png" alt="CSS">
+                            </spam>
+                            <spam class="nombre_lenguaje">Css</spam>
+                        </spam>
+
+                    </div>
+
+
+                    <div>
+
+                        <h4 class="lenguajes">Frameworks y Herramientas</h4>
+
+                        <div class="stak">
+
+                            <spam class="skill">
+                                <spam class="icon2">
+                                    <img src="img/icon_bootstrap.png" alt="Bootstrap">
+                                </spam>
+                                <spam class="nombre_lenguaje">Bootstrap</spam>
+                            </spam>
+
+                            <spam class="skill">
+                                <spam class="icon2">
+                                    <img src="img/icon_react.png" alt="React">
+                                </spam>
+                                <spam class="nombre_lenguaje">React</spam>
+                            </spam>
+
+                            <spam class="skill">
+                                <spam class="icon2">
+                                    <img src="img/icon_git .png" alt="Git y Github">
+                                </spam>
+                                <spam class="nombre_lenguaje">Git y Github</spam>
+                            </spam>
+
+                        </div>
+                    </div>
+
+
+                    <div>
+
+                        <h4 class="lenguajes">Bases de Datos</h4>
+
+                        <div class="stak">
+
+                            <spam class="skill">
+                                <spam class="icon2">
+                                    <img src="img/icon_mongodb.png" alt="MongoDb">
+                                </spam>
+                                <spam class="nombre_lenguaje">MongoDb</spam>
+                            </spam>
+
+                            <spam class="skill">
+                                <spam class="icon2">
+                                    <img src="img/icon_sql.png" alt="SQL">
+                                </spam>
+                                <spam class="nombre_lenguaje">SQL</spam>
+                            </spam>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seccion de Contacto-->
+        <section class="section">
+            <div class="container" id="contacto">
+
+
+                <div class="sub-titulo">
+
+                    <h2>Contacto</h2>
+                </div>
+
+                <div class="box">
+
+
+                    <div class="cuadro_formulario">
+
+                        <form action="https://formsubmit.co/9b4a6b82e21f90f1f32ea0bfdf810e8f" method="POST">
+                            <div class="inputBox">
+
+                                <input type="text" required="required" name="Nombre">
+                                <span>Nombre</span>
+                                <i></i>
+                            </div>
+
+                            <div class="inputBox">
+
+                                <input type="text" required="required" name="Asunto">
+                                <span for="">Asunto</span>
+                                <i></i>
+
+                            </div>
+
+                            <div class="inputBox">
+
+                                <input type="email" name="email" required="required">
+                                <span for="">Email</span>
+                                <i></i>
+
+                            </div>
+
+                            <div class="cajaTexto">
+
+                                <span>Deje su mensaje por favor</span>
+
+                                <textarea name="Mensaje" id="texto" cols="30" rows="10" required="required"></textarea>
+
+                            </div>
+
+                            <div class="boton-formulario">
+                                <button type="submit">Enviar Mensaje</button>
+
+                            </div>
+
+                            <div class="api-formulario">
+                                <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html#contacto">
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_template" value="table">
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
 
 
 
